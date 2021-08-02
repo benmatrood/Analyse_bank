@@ -40,7 +40,7 @@ def output():
 
     a= resultat_finale(data)
     if a==1:
-        return '<h5>Ce client est suceptible de quitter le service de la carte bancaire</h5>
+        return '<h5>Ce client est suceptible de quitter le service de la carte bancaire</h5>'
     elif  a==0:
         return'<h5>Bonne nouvelle !  Ce client ne quittras pas le service de la carte bancaire .</h5>'
     else:
