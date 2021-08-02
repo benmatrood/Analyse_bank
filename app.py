@@ -40,11 +40,11 @@ def output():
 
     a= resultat_finale(data)
     if a==1:
-        phrase ='<h5>Ce client est suceptible de quitter la banque </h5>'
+        phrase ='<h5>Ce client est suceptible de quitter le service de la carte bancaire</h5>'
     elif  a==0:
-        phrase="<h5>Bonne nouvelle ! Ce client ne quittras pas la banque.</h5>"
+        phrase='<h5>Bonne nouvelle !  Ce client ne quittras pas le service de la carte bancaire .</h5>'
     else:
-        phrase="<h5>Nous ne parvenons pas à faire de prédiction</h5>"
+        phrase='<h5>Nous ne parvenons pas à faire de prédiction véfiez vous informations</h5>.'
     return jsonify(phrase)
 
 
