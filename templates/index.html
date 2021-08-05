@@ -9,6 +9,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Analyse client</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body> 
@@ -83,7 +84,7 @@
         </div>
         <!-- fin de la construction du formulaire -->
         <!-- Modal -->
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+        <div class="modal fade " id="exampleModalLong" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalLongTitle" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -94,7 +95,7 @@
                         </button>
                     </div>
                     <div class="modal-body" id="prediction">
-<!--                         Veuillez remplire tous les champs du formulaire pour obtenir une prédiction -->
+                        <!-- Veuillez remplire tous les champs du formulaire pour obtenir une prédiction -->
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
@@ -154,6 +155,17 @@
             }
         xhr.send(JSON.stringify(params)); //envoie des infortions en format json
     }
+    wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+
 </script> -->
 <!--Fin du code java-scripte
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
+
+   <div class=" div_echention text-center ">
+       <h4>Sélectionnez un échantillon</h4><br>
+    <form class="container text-center" action="{{url_for('echantillon')}}" method="post">
+        
+        <div class="col-auto text-center ">
+          <input type="number" name ="input_number" id="inputnumber" class="input_form"  placeholder="Enter un nombre">
+        </div>
+        <div class="col-auto mt-4">
+          <button type="submit" class="btn btn-primary mb-3">Soumetre</button>
+        </div>
+      </form>
+      {{liste_data}}
+    
+   </div>
+</body>
+</html>
+<style>
+    .input_form {
+    /* display: block; */
+    width: 170px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.div_echention{
+    margin: 17% 25% 13% 25%;
+    
+}
+</style>
