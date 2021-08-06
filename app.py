@@ -77,7 +77,7 @@ def output_1():
     f_data = DataFrame(f_data) 
     v = pd.concat([f_data,y_pred], axis=1)
     headings = ('Months_Inactive_12_mon','Months_Inactive_12_mon','Credit_Limit','Avg_Open_To_Buy','Total_Amt_Chng_Q4_Q1','Total_Trans_Amt','Total_Trans_Ct','Total_Ct_Chng_Q4_Q1','Attrition_Flag','Prediction')
-    return render_template('resultat.html',headings= headings ,data=v.values)    
+    return render_template('resultat_.html',headings= headings ,data=v.values)    
 
 
 if __name__ == '__main__':
