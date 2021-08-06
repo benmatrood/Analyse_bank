@@ -1,11 +1,9 @@
-body {
-    /* background-color:#101e38 ; */
-    /* background-image: url( img/bg.png ); */
+.predict_section {
     background-color:#101e38 ;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 92vh;
 }
 
 .form-group select {

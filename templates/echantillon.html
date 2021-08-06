@@ -10,23 +10,121 @@
     
 </head>
 <body>
-
+  {% include 'nav.html' %}
    <div class=" div_echention text-center ">
        <h4>Sélectionnez un échantillon</h4><br>
-    <form class="container text-center" action="{{url_for('echantillon')}}" method="post">
-        
+    <form class="container text-center" action="{{url_for('output_1')}}" method="post">
         <div class="col-auto text-center ">
           <input type="number" name ="input_number" id="inputnumber" class="input_form"  placeholder="Enter un nombre">
         </div>
         <div class="col-auto mt-4">
-          <button type="submit" class="btn btn-primary mb-3">Soumetre</button>
+          <button type="submit" class="btn btn-primary mb-3"> Soumetre</button> </a>
         </div>
       </form>
-      {{liste_data}}
     
    </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style>
     .input_form {
     /* display: block; */
