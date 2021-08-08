@@ -1,9 +1,29 @@
+
+body{
+  background-color:#f9f9f9 !important;
+}
+.navbar{
+  height: auto;
+  padding: 8px 0;
+ 
+}
+.navbar .logo h2{
+  font-size:35px;
+}
+.a{
+  text-decoration: none;
+}
+.logo{
+  font-size :35px;
+  font:bold;
+}
+
 .predict_section {
-    background-color:#101e38 ;
+    background-color:#f0ececc2;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 92vh;
+    height: 89vh;
 }
 
 .form-group select {
@@ -102,8 +122,13 @@
     }
     #hero .hero-img img {
       width: 80%;
+      height:100vh;
     }
   }
+ 
 /*--------------------------------------------------------------
 # Section copyright footer.html
 /* --------------------------------------------------------------*/ 
+/* body{ */
+  /* background-color:#f9f9f9; */
+/* } */
